@@ -3,11 +3,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.debug("DOM fully loaded and parsed");
     const swiper = new Swiper('.swiper', {
-        slidesPerView: 1.2,        // 1枚+次の画像が少し見える
-        spaceBetween: 16,          // スライド間の余白（px）
-        centeredSlides: true,      // 現在のスライドを中央に
-        autoplay: false,           // 自動スクロールなし
-        loop: false,               // 無限ループもしない
+        slidesPerView: 1.2,
+        spaceBetween: 16,
+        autoplay: false,
+        loop: false,
         breakpoints: {
             320: {
                 width: 280,

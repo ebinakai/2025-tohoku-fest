@@ -3,16 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="warabi.js"></script>
     <title>わらび餅キング</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="EbinaKai&MutoMitsuki">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
+    <!-- GoogleFonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Swiper.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- カスタムスクリプト -->
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
 
 <body>
@@ -22,7 +29,7 @@
 
             <h1>
                 <figure>
-                    <img class="" src="img/warabiKing.jpg" alt="わらび餅キング">
+                    <img class="" src="img/warabiKing.webp" alt="わらび餅キング">
                 </figure>
             </h1>
 
@@ -47,9 +54,21 @@
                     <h2>出店場所</h2>
                 </summary>
                 <p><strong>広場エリア(06)</strong>で出店しています！</p>
-                <figure id="map">
-                    <img src="img/map.png">
-                </figure>
+
+                <div id="maps" class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <figure>
+                                <img class="zoomable" src="img/map.webp" alt="出店場所地図">
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure>
+                                <img class="zoomable" src="img/map_booth.webp" alt="ブース地図">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
             </details>
 
             <details open>
@@ -60,32 +79,43 @@
                     <article id="menu-warabi-mochi">
                         <h3>わらび餅：350円</h3>
                         <figure>
-                            <img src="img/warabi_1.jpg">
+                            <img class="zoomable" src="img/warabi_1.webp">
                         </figure>
                         <p>やわらかく、とろけるような口あたりのわらび餅。ひんやり冷やして、ほどよい甘さの黒みつと香ばしいきな粉が絶妙に調和する。ほっと一息つきたいときにぴったりの一品。</p>
                     </article>
                     <article id="menu-warabi-drink">
                         <h3>わらび餅ドリンク：550円</h3>
                         <figure>
-                            <img src="img/warabi_2.jpg">
+                            <img class="zoomable" src="img/warabi_2.webp">
                         </figure>
-                        <p>つるんとしたわらび餅を細かく刻み、まろやかなミルクにたっぷり入れた新感覚ドリンク。もちもちの食感と優しい甘さがくせになる、飲むスイーツ。</p>
+                        <p>つるんとしたわらび餅を、アーモンドミルクにたっぷり入れた新感覚ドリンク。もちもちの食感と優しい甘さがくせになる、飲むスイーツ。</p>
                     </article>
                 </section>
                 <section>
                     <p>会場で配布している割引券掲示で<strong>2品まで50円引き</strong>になります！！</p>
                     <p>※画像はイメージです。実際の商品とは容器等が若干異なります。</p>
                 </section>
-
-                <!--<a href="https://www.warabi-king.net">モバイルオーダーはこちらから！</a>-->
-
             </details>
+
+            <section id="sns">
+                <h2>Instagramもチェック！</h2>
+
+                <a href="https://www.instagram.com/warabi_king/" target="_blank" rel="noopener noreferrer">
+                    <figure>
+                        <img src="img/Instagram_gradient.svg" alt="Instagram">
+                    </figure>
+                </a>
+            </section>
         </main>
     </section>
 
     <footer>
         <p>© 2025 warabi-king.net all rights reserved.</p>
     </footer>
+
+    <dialog id="modal-box">
+        <img id="modal-image" src="img/map_booth.webp" alt="">
+    </dialog>
 </body>
 
 </html>

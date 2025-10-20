@@ -10,19 +10,19 @@ document.addEventListener("DOMContentLoaded", function () {
         loop: false,               // 無限ループもしない
         breakpoints: {
             320: {
-                width: 320,
+                width: 280,
             },
             480: {
-                width: 480,
+                width: 320,
             },
             640: {
-                width: 640,
+                width: 480,
             },
             800: {
-                width: 800,
+                width: 640,
             },
             1024: {
-                width: 1024,
+                width: 800,
             },
         },
     });

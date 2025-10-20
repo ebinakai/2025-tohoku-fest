@@ -8,44 +8,84 @@
     <script src="warabi.js"></script>
     <title>わらび餅キング</title>
     <meta name="author" content="EbinaKai&MutoMitsuki">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="main">
-        <div class="main_back"></div>
-        <div class="main_text">
-            <img class="circleImg" src="img/warabiKing.jpg">
+    <section class="main-bg"></section>
+    <section class="main-content">
+        <header>
+
+            <h1>
+                <figure>
+                    <img class="" src="img/warabiKing.jpg" alt="わらび餅キング">
+                </figure>
+            </h1>
+
             <p>わらび餅キングです！</p>
-            <p>わらび餅とわらび餅ドリンクを販売しています！</p>
+            <p><a href="#menu-warabi-mochi">わらび餅</a>と<a href="#menu-warabi-drink">わらび餅ドリンク</a>を販売しています！</p>
+        </header>
 
-            <details open class="dtlItem">
-                <summary class="midashi">出店期間</summary>
-                <p>・10月23日 10:00~19:00</p>
-                <p>・10月24日 9:00~19:00</p>
-                <p>・10月25日 9:00~16:00</p>
+        <main>
+            <details open>
+                <summary>
+                    <h2>出店期間</h2>
+                </summary>
+                <ul>
+                    <li>10月23日 10:00~19:00</li>
+                    <li>10月24日 9:00~19:00</li>
+                    <li>10月25日 9:00~16:00</li>
+                </ul>
             </details>
 
-            <details open class="dtlItem">
-                <summary class="midashi">出店場所</summary>
-                <p>広場エリア(06)で出店しています！</p>
-                <img class="circleImg" src="img/map.png">
+            <details open>
+                <summary>
+                    <h2>出店場所</h2>
+                </summary>
+                <p><strong>広場エリア(06)</strong>で出店しています！</p>
+                <figure id="map">
+                    <img src="img/map.png">
+                </figure>
             </details>
 
-            <details open class="dtlItem">
-                <summary class="midashi">メニュー</summary>
-                <p>わらび餅：350円</p>
-                <img class="circleImg" src="img/warabi_1.jpg">
-                <p>わらび餅ドリンク：550円</p>
-                <img class="circleImg" src="img/warabi_2.jpg">
-                <p>会場で配布している割引券掲示で2品まで50円引きになります！！</p>
-                <p>※画像はイメージです。実際の商品とは容器等が若干異なります。</p>
+            <details open>
+                <summary>
+                    <h2>メニュー</h2>
+                </summary>
+                <section id="menus">
+                    <article id="menu-warabi-mochi">
+                        <h3>わらび餅：350円</h3>
+                        <figure>
+                            <img src="img/warabi_1.jpg">
+                        </figure>
+                        <p>やわらかく、とろけるような口あたりのわらび餅。ひんやり冷やして、ほどよい甘さの黒みつと香ばしいきな粉が絶妙に調和する。ほっと一息つきたいときにぴったりの一品。</p>
+                    </article>
+                    <article id="menu-warabi-drink">
+                        <h3>わらび餅ドリンク：550円</h3>
+                        <figure>
+                            <img src="img/warabi_2.jpg">
+                        </figure>
+                        <p>つるんとしたわらび餅を細かく刻み、まろやかなミルクにたっぷり入れた新感覚ドリンク。もちもちの食感と優しい甘さがくせになる、飲むスイーツ。</p>
+                    </article>
+                </section>
+                <section>
+                    <p>会場で配布している割引券掲示で<strong>2品まで50円引き</strong>になります！！</p>
+                    <p>※画像はイメージです。実際の商品とは容器等が若干異なります。</p>
+                </section>
 
                 <!--<a href="https://www.warabi-king.net">モバイルオーダーはこちらから！</a>-->
-                
-            </details>
 
-        </div>
-    </div>
+            </details>
+        </main>
+    </section>
+
+    <footer>
+        <p>© 2025 warabi-king.net all rights reserved.</p>
+    </footer>
 </body>
 
 </html>

@@ -1,1 +1,5 @@
-console.log("aaa");
+"use strict";
+
+document.addEventListener("DOMContentLoaded", function() {
+    
+});

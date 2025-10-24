@@ -1,7 +1,10 @@
 html {
     font-size: 22px;
     box-sizing: border-box;
-    font-family: "M PLUS Rounded 1c", sans-serif;
+    
+    * {
+        font-family: "M PLUS Rounded 1c", sans-serif;
+    }
 
     @media (width <=600px) {
         font-size: 18px;
@@ -76,7 +79,6 @@ figure {
         p a {
             color: rgb(114, 59, 0);
             font-weight: bold;
-            /* text-decoration: none; */
         }
     }
 
@@ -86,9 +88,42 @@ figure {
         font-size: 1.2rem;
         font-weight: bold;
     }
+    
+    #reservation {
+        margin: 2rem 0;
 
-    #maps {
-        figure {}
+        a {
+            display: block;
+            text-decoration: none;
+            text-align: center;
+
+            button {
+                font-size: 1.2rem;
+                background-color: rgb(114, 59, 0);
+                color: white;
+                font-weight: bold;
+                border: none;
+                border-radius: 8px;
+                padding: 0.5rem 1rem;
+                cursor: pointer;
+                border: solid 2px rgb(180, 130, 80);
+
+                &:hover {
+                    background-color: rgb(180, 130, 80);
+                    border: solid 2px rgb(114, 59, 0);
+                }
+
+                @media (width <= 600px) {
+                    span {
+                        display: none;
+                    }
+                }
+
+                @media (width <= 400px) {
+                    font-size: 1rem;
+                }
+            }
+        }
     }
 
     #menus {
